@@ -1,0 +1,61 @@
+@media (max-width: 1200px){
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        .text{
+            margin-top: 80px;
+            h1{
+                font-size: 8em;
+            }
+        }
+        .logo-lol{
+            height: 20vh;
+        }
+    }
+    .welcome-container{
+        .text-container{
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    header{
+        padding: 10px 70px;
+    }
+    
+    .trist-container{
+        .img-splashart{
+            right: -150px;
+            bottom: -150px;
+        }
+    }
+
+    .container-contact{
+        .contact-form{
+            width: 100%;
+            .row{
+                padding: 0 20px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .col{
+                    width: 100%;
+                    margin: 15px;
+                    .label-inscription{
+                        padding-left: 0;
+                        padding-right: 10px;
+                    }
+                }
+                .col-area{
+                    margin: 0 15px 30px 15px;
+                }
+            }
+        }
+    }
+}

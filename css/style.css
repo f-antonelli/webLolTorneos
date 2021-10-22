@@ -16,7 +16,8 @@
     font-weight: 600;
     line-height: 1.5em; }
   .banner .logo-lol {
-    height: 180px; }
+    display: flex;
+    height: 20vh; }
 
 .welcome-container {
   display: flex;
@@ -42,9 +43,11 @@
 .experience {
   position: relative;
   background-color: #0f0f0f;
-  min-height: 90vh;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   overflow: hidden; }
   .experience .container-box {
     display: flex;
@@ -96,12 +99,19 @@
       right: -4px;
       transform: skewX(2deg) skewY(4deg);
       background: linear-gradient(315deg, #00ccff, #0e1538, #00ccff);
-      filter: blur(50px); }
-  .experience .img-splashart {
+      filter: blur(10px); }
+
+.trist-container {
+  position: relative;
+  min-height: 45vh;
+  display: flex;
+  background-color: #0f0f0f;
+  overflow: hidden; }
+  .trist-container .img-splashart {
     position: absolute;
     right: -200px;
     bottom: -200px; }
-    .experience .img-splashart img {
+    .trist-container .img-splashart img {
       width: 100%; }
 
 header {
@@ -127,11 +137,13 @@ header {
         position: relative;
         display: inline-block;
         margin: 0 15px;
-        border: solid 2px #94ddfe;
-        border-radius: .5rem;
-        padding: 5px;
+        border: solid 1px #21ebff;
+        padding: 7px;
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: .5s; }
+      header ul li a:hover {
+        background: #21ebff; }
 
 header.sticky {
   padding: 0px 100px;
@@ -188,8 +200,24 @@ footer {
         color: #93defe;
         font-weight: 200; }
 
+.btn-whatsapp {
+  position: fixed;
+  z-index: 1000;
+  bottom: 3vh;
+  left: calc(3.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  color: white;
+  transition: .5s; }
+
+.btn-whatsapp:hover {
+  color: #25D366;
+  font-size: 4.2rem; }
+
 .container-contact {
-  background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.3)), url(../images/inscriptions/inscriptions.jpg);
+  background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.3)), url(../images/inscriptions/inscriptions.jpg) no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,24 +274,89 @@ footer {
         transition: .5s; }
       .container-contact .contact-form .row input[type="submit"]:hover {
         background: #21ebff; }
-  .container-contact .contact-form-response {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #93defe; }
-    .container-contact .contact-form-response .none {
-      display: none; }
-  .container-contact .contact-form-error {
-    margin-top: -.5rem;
-    font-size: 80%;
-    background-color: red;
-    color: #fff;
-    transition: all 800ms ease; }
-  .container-contact .contact-form-error.is-active {
-    display: block;
-    animation: show-message 1s 1 normal 0s ease-out both; }
 
 footer {
   width: 100%; }
+
+@media (max-width: 1200px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; }
+    .banner .text {
+      margin-top: 80px; }
+      .banner .text h1 {
+        font-size: 8em; }
+    .banner .logo-lol {
+      height: 20vh; }
+  .welcome-container .text-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px; } }
+
+@media (max-width: 800px) {
+  header {
+    padding: 10px 70px; }
+  .trist-container .img-splashart {
+    right: -150px;
+    bottom: -150px; }
+  .container-contact .contact-form {
+    width: 100%; }
+    .container-contact .contact-form .row {
+      padding: 0 20px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .container-contact .contact-form .row .col {
+        width: 100%;
+        margin: 15px; }
+        .container-contact .contact-form .row .col .label-inscription {
+          padding-left: 0;
+          padding-right: 10px; }
+      .container-contact .contact-form .row .col-area {
+        margin: 0 15px 30px 15px; } }
+
+.thanks-container {
+  background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.3)), url(../images/index_images/ziggs2.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex; }
+  .thanks-container .thanks-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    margin: auto;
+    padding: 40px;
+    color: white; }
+    .thanks-container .thanks-box h2 {
+      font-family: 'Righteous', cursive;
+      font-size: 3em;
+      color: white;
+      font-weight: 600;
+      line-height: 1.5em; }
+    .thanks-container .thanks-box p {
+      padding: 0 90px; }
+    .thanks-container .thanks-box .btn-back {
+      text-decoration: none;
+      border: 2px solid #21ebff;
+      padding: 10px 30px;
+      background: none;
+      margin: 15px;
+      display: inline-block;
+      font-weight: 500;
+      cursor: pointer;
+      transition: .5s;
+      color: white; }
+    .thanks-container .thanks-box .btn-back:hover {
+      background: #21ebff; }
 
 * {
   margin: 0;

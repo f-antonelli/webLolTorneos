@@ -1,0 +1,48 @@
+.thanks-container{
+    background: 
+    linear-gradient(rgba(26,26,26,0.5), 
+    rgba(26,26,26,0.3)), 
+    url(../images/index_images/ziggs2.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    .thanks-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        margin: auto;
+        padding: 40px;
+        color: white;
+        h2{
+            font-family: 'Righteous', cursive;
+            font-size: 3em;
+            color: white;
+            font-weight: 600;
+            line-height: 1.5em;
+        }
+        p{
+            padding: 0 90px;
+        }
+        .btn-back{
+            text-decoration: none;
+            border: 2px solid #21ebff;
+            padding: 10px 30px;
+            background: none;
+            margin: 15px;
+            display: inline-block;
+            font-weight: 500;
+            cursor: pointer;
+            transition: .5s;
+            color: white;
+        }
+        .btn-back:hover{
+            background: #21ebff;
+        }
+    }
+}

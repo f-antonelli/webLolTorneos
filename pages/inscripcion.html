@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Open LoL | Inscripcion</title>
@@ -24,7 +26,7 @@
             <h2>Formulario de Contacto</h2>
             <hr>
         </section>
-        <form class="contact-form" target="_BLANK" action="https://formsubmit.co/antonelli.fd@gmail.com" method="POST">
+        <form class="contact-form" action="https://formsubmit.co/openlol.torneos@gmail.com" method="POST">
             <div class="row">
                 <div class="col">
                     <input type="text" name="name" placeholder="Ingrese su nombre y apellido" 
@@ -35,7 +37,6 @@
                 <div class="col">
                     <input type="email" name="email" placeholder="Ingrese su Email" 
                     title="Escribe un email válido"
-                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" 
                     required>
                 </div>
             </div>
@@ -43,6 +44,7 @@
             <div class="row">
                 <div class="col">
                     <input type="text" name="phone"
+                    title="Telefono solo acepta numeros" 
                     placeholder="Ingrese su nro. de telefono" required>
                 </div>
                 <div class="col">
@@ -56,8 +58,6 @@
             <div class="row">
                 <div class="col">
                     <input type="text" name="nickName" placeholder="Nick participante 1" 
-                    title="Nombre solo acepta letras y espacios" 
-                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
                     required>
                 </div>
                 <div class="col">
@@ -73,8 +73,6 @@
             <div class="row">
                 <div class="col">
                     <input type="text" name="nickName" placeholder="Nick participante 2" 
-                    title="Nombre solo acepta letras y espacios" 
-                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
                     required>
                 </div>
                 <div class="col">
@@ -90,8 +88,6 @@
             <div class="row">
                 <div class="col">
                     <input type="text" name="nickName" placeholder="Nick participante 3" 
-                    title="Nombre solo acepta letras y espacios" 
-                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
                     required>
                 </div>
                 <div class="col">
@@ -107,8 +103,6 @@
             <div class="row">
                 <div class="col">
                     <input type="text" name="nickName" placeholder="Nick participante 4" 
-                    title="Nombre solo acepta letras y espacios" 
-                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
                     required>
                 </div>
                 <div class="col">
@@ -124,8 +118,6 @@
             <div class="row">
                 <div class="col">
                     <input type="text" name="nickName" placeholder="Nick participante 5" 
-                    title="Nombre solo acepta letras y espacios" 
-                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
                     required>
                 </div>
                 <div class="col">
@@ -142,7 +134,7 @@
                 <div class="col-area">
                     <textarea placeholder="Escriba su mensaje..." name="textarea" 
                     title="Tu mensaje no debe exceder los 255 caracteres"
-                    data-pattern="^.{1,255}$" required></textarea>
+                    data-pattern="^.{1,255}$"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -150,9 +142,9 @@
                     <input type="submit" class="submit-style" value="Enviar">
                 </div>
             </div>
-            <!-- <div class="contact-form-response none">
-                <p>Los datos han sido enviados.</p>
-            </div> -->
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
         </form>
 
         <!--Footer-->

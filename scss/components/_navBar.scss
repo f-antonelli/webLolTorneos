@@ -24,11 +24,14 @@ header{
                 position: relative;
                 display: inline-block;
                 margin: 0 15px;
-                border: solid 2px #94ddfe;
-                border-radius: .5rem;
-                padding: 5px;
+                border: solid 1px #21ebff;
+                padding: 7px;
                 color: #fff;
                 text-decoration: none;
+                transition: .5s;
+            }
+            a:hover{
+                background: #21ebff;
             }
         }
     }
