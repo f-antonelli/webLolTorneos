@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Open LoL | Inscripcion</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img class="logo" src="../images/logo/logo.png" alt="logo">
+        </a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu nav-ul">
+            <li><a href="./pages/inscripcion.html">Inscribite ahora</a></li>
+        </ul>
+    </header>
+
+    <div class="container-contact" id="contact">
+        <section class="title">
+            <h2>Formulario de Contacto</h2>
+            <hr>
+        </section>
+        <form class="contact-form" target="_BLANK" action="https://formsubmit.co/antonelli.fd@gmail.com" method="POST">
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="name" placeholder="Ingrese su nombre y apellido" 
+                    title="Nombre solo acepta letras y espacios" 
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                    required>
+                </div>
+                <div class="col">
+                    <input type="email" name="email" placeholder="Ingrese su Email" 
+                    title="Escribe un email válido"
+                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" 
+                    required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="phone"
+                    placeholder="Ingrese su nro. de telefono" required>
+                </div>
+                <div class="col">
+                    <input type="text" name="team" placeholder="Ingrese el nombre del equipo" 
+                    title="Nombre solo acepta letras y espacios" 
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                    required>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="nickName" placeholder="Nick participante 1" 
+                    title="Nombre solo acepta letras y espacios" 
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                    required>
+                </div>
+                <div class="col">
+                    <label class="label-inscription">Seleccione su division</label>
+                    <select name="" id="">
+                        <option value="">Bronce</option>
+                        <option value="">Plata</option>
+                        <option value="">Oro</option>
+                        <option value="">Platino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="nickName" placeholder="Nick participante 2" 
+                    title="Nombre solo acepta letras y espacios" 
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                    required>
+                </div>
+                <div class="col">
+                    <label class="label-inscription">Seleccione su division</label>
+                    <select name="" id="">
+                        <option value="">Bronce</option>
+                        <option value="">Plata</option>
+                        <option value="">Oro</option>
+                        <option value="">Platino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="nickName" placeholder="Nick participante 3" 
+                    title="Nombre solo acepta letras y espacios" 
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                    required>
+                </div>
+                <div class="col">
+                    <label class="label-inscription">Seleccione su division</label>
+                    <select name="" id="">
+                        <option value="">Bronce</option>
+                        <option value="">Plata</option>
+                        <option value="">Oro</option>
+                        <option value="">Platino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="nickName" placeholder="Nick participante 4" 
+                    title="Nombre solo acepta letras y espacios" 
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                    required>
+                </div>
+                <div class="col">
+                    <label class="label-inscription">Seleccione su division</label>
+                    <select name="" id="">
+                        <option value="">Bronce</option>
+                        <option value="">Plata</option>
+                        <option value="">Oro</option>
+                        <option value="">Platino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="nickName" placeholder="Nick participante 5" 
+                    title="Nombre solo acepta letras y espacios" 
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                    required>
+                </div>
+                <div class="col">
+                    <label class="label-inscription">Seleccione su division</label>
+                    <select name="" id="">
+                        <option value="">Bronce</option>
+                        <option value="">Plata</option>
+                        <option value="">Oro</option>
+                        <option value="">Platino</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-area">
+                    <textarea placeholder="Escriba su mensaje..." name="textarea" 
+                    title="Tu mensaje no debe exceder los 255 caracteres"
+                    data-pattern="^.{1,255}$" required></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-area">
+                    <input type="submit" class="submit-style" value="Enviar">
+                </div>
+            </div>
+            <!-- <div class="contact-form-response none">
+                <p>Los datos han sido enviados.</p>
+            </div> -->
+        </form>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-content">
+                <h3>Open LoL</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores praesentium vel aperiam, numquam omnis.</p>
+                <ul class="social-medias">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-discord"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2021 openLoL. designed by <span>fede Antonelli</span></p>
+            </div>
+        </footer>
+
+        <script src="../main.js"></script>
+</body>
+</html>

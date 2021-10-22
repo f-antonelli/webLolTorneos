@@ -1,0 +1,41 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    a{
+        .logo{
+            height: 100px;
+        }
+    }
+    ul{
+        position: relative;
+        display: flex;
+        li{
+            position: relative;
+            list-style: none; 
+            a{
+                position: relative;
+                display: inline-block;
+                margin: 0 15px;
+                border: solid 2px #94ddfe;
+                border-radius: .5rem;
+                padding: 5px;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+header.sticky{
+    padding: 0px 100px;
+    background-color: rgba(25, 25, 25, 0.8);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
